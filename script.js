@@ -21,8 +21,12 @@ function result() {
 
 function backspace() {
          var bs = document.getElementById("output").innerText;
+    if (bs ==0) {
+        document.getElementById("output").innerText = "0";
+    }
+    else{
          document.getElementById("output").innerText = bs.substring(0, bs.length - 1);
-        if (bs=="") {
-            document.getElementById("output").innerText = "0";
-        }
+        
+    }
+        
 }
